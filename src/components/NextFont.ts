@@ -6,3 +6,12 @@ const roboto = Montserrat({
   variable: '--font-Montserrat',
   preload: true,
 });
+const lato = Lato({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-lato',
+  preload: true,
+});
+
+export { roboto, lato };

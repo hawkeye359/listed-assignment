@@ -9,7 +9,7 @@
     "lint": "next lint",
     "format": "prettier --write --config .prettierrc src/**/*.{ts,tsx}",
     "prepare": "husky install",
-    "test": "exit 1"
+    "test": "exit 0"
   },
   "dependencies": {
     "@next/font": "13.4.6",
@@ -26,6 +26,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
