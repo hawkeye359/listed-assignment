@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { useSession, signIn } from 'next-auth/react';
 import Image from 'next/image';
 import GoogleIcon from '@/icons/google-icon 1.svg';
-import Google from 'next-auth/providers/google';
+import AppleIcon from '@/icons/apple_icon.svg';
 export default function Home() {
   const router = useRouter();
   const { data: session, status } = useSession();
@@ -47,14 +47,32 @@ export default function Home() {
                 src={GoogleIcon}
                 alt='Sign in with google icon'
                 className='h-full'
+                height={14}
               />
               <span
-                className={`${montserrat.className}  leading-[0.9375rem] ml-[0.625rem] text-[0.75rem]`}
+                className={`${montserrat.className}  leading-[0.9375rem] ml-[0.625rem] text-[0.75rem] text-[#858585]`}
               >
                 Sign in with Google
               </span>
             </button>
-            <div>Sign in with Apple</div>
+            <button
+              className='bg-white rounded-[0.625rem] flex items-center px-[1.5rem] ml-[1.5625rem]'
+              onClick={() => {
+                alert('this method is not implemented');
+              }}
+            >
+              <Image
+                src={AppleIcon}
+                alt='Sign in with google icon'
+                className='h-full'
+                height={14}
+              />
+              <span
+                className={`${montserrat.className}  leading-[0.9375rem] ml-[0.625rem] text-[0.75rem] text-[#858585]`}
+              >
+                Sign in with Apple
+              </span>
+            </button>
           </div>
           <div className='bg-white p-[1.875rem] mt-[1.5625rem] w-full rounded-[1.25rem]'>
             <form className={`flex flex-col ${lato.className}`}>
