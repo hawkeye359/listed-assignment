@@ -7,5 +7,6 @@
 - [x] Changed the favicon
 - [x] Installed and imported reset-css
 - [x] Setup Tailwind
-- [x] Install relevant fonts
+- [x] Install relevant fonts (making next/font to work with tailwind)
+- [x] Install prettier locally
 - [x] Configure prettier to work with eslint (making pre-commit hooks with husky)

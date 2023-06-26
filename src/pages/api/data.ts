@@ -2,12 +2,20 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 type Data = {
-  name: string;
+  revenue: string;
+  transactions: string;
+  likes: string;
+  users: string;
 };
 
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  res.status(200).json({ name: 'John Doe' });
+  res.status(200).json({
+    revenue: '$2,129,430',
+    transactions: '1,520',
+    likes: '9,721',
+    users: '892',
+  });
 }

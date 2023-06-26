@@ -1,9 +1,9 @@
-import { Montserrat, Lato } from 'next/font/google';
-const roboto = Montserrat({
+import { Montserrat, Lato, Open_Sans } from 'next/font/google';
+const montserrat = Montserrat({
   weight: ['400', '700'],
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-Montserrat',
+  variable: '--font-montserrat',
   preload: true,
 });
 const lato = Lato({
@@ -13,5 +13,11 @@ const lato = Lato({
   variable: '--font-lato',
   preload: true,
 });
-
-export { roboto, lato };
+const Open = Open_Sans({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-open-sans',
+  preload: true,
+});
+export { montserrat, lato, Open };
