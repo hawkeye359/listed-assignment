@@ -4,6 +4,9 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { useSession, signIn } from 'next-auth/react';
+import Image from 'next/image';
+import GoogleIcon from '@/icons/google-icon 1.svg';
+import Google from 'next-auth/providers/google';
 export default function Home() {
   const router = useRouter();
   const { data: session, status } = useSession();
@@ -35,12 +38,21 @@ export default function Home() {
           </p>
           <div className='flex mt-[1.625rem] h-[1.875rem]'>
             <button
-              className='bg-slate-500'
+              className='bg-white rounded-[0.625rem] flex items-center px-[1.1875rem]'
               onClick={() => {
                 signIn('google');
               }}
             >
-              Sign in with Google
+              <Image
+                src={GoogleIcon}
+                alt='Sign in with google icon'
+                className='h-full'
+              />
+              <span
+                className={`${montserrat.className}  leading-[0.9375rem] ml-[0.625rem] text-[0.75rem]`}
+              >
+                Sign in with Google
+              </span>
             </button>
             <div>Sign in with Apple</div>
           </div>

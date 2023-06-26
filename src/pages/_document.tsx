@@ -6,7 +6,7 @@ export default function Document() {
     <Html lang='en' className={`${lato.variable} ${montserrat.variable}`}>
       <Head />
       <title>Listed Assignment</title>
-      <body>
+      <body className='bg-[#F5F5F5]'>
         <Main />
         <NextScript />
       </body>
