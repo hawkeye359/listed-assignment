@@ -14,10 +14,7 @@ function Dashboard() {
   const router = useRouter();
   useEffect(() => {
     if (!session) {
-      console.log('session', session);
       router.push('/');
-    } else {
-      console.log('session not found');
     }
   }, [session, router]);
   return (

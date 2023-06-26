@@ -10,7 +10,6 @@ export default function useData() {
     async function fetchData() {
       const res = await fetch('/api/data');
       const { revenue, transactions, likes, users } = await res.json();
-      console.log(revenue, transactions, likes, users);
       setData({ revenue, transactions, likes, users });
     }
     fetchData();

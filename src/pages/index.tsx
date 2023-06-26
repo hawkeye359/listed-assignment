@@ -9,10 +9,7 @@ export default function Home() {
   const { data: session, status } = useSession();
   useEffect(() => {
     if (session) {
-      console.log('session', session);
       router.push('/dashboard');
-    } else {
-      console.log('session not found');
     }
   }, [session, router]);
   return (

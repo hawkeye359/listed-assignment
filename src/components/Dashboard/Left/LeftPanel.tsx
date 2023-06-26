@@ -51,8 +51,6 @@ const ListElement = ({
   function routeHandler(e: React.MouseEvent) {
     if (e.target) {
       if (e.target instanceof HTMLElement) {
-        console.log(e);
-        console.log(e.target.dataset.idOf);
         changeActive(Number(e.target.dataset.idof));
       }
     }

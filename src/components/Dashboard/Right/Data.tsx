@@ -19,7 +19,6 @@ function Card({
   dataForDisplay: string;
   background: string;
 }) {
-  console.log(background);
   return (
     <div
       style={{ background }}
