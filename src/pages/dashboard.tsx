@@ -24,7 +24,7 @@ function Dashboard() {
           <LeftPanel />
         </div>
       </div>
-      <div className='h-full p-[3.75rem] grow'>
+      <div className='h-full p-[3.75rem] grow overflow-y-scroll'>
         <div className='h-full w-full '>
           <div>
             <Header />
